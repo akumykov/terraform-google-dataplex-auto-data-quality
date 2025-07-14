@@ -92,3 +92,8 @@ steps:
         echo "*******************************************************************************"
       fi
 # [END tf-apply]
+
+logsBucket: 'chronos-data-cloudbuild-logs'
+serviceAccount: 'projects/PROJECT_ID/serviceAccounts/cloud-build-runner@gps-pso-chronos-data.iam.gserviceaccount.com'
+options:
+  logging: GCS_ONLY
