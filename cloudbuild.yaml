@@ -92,3 +92,11 @@ steps:
         echo "*******************************************************************************"
       fi
 # [END tf-apply]
+
+options:
+  # Replace 'projects/your-gcp-project/serviceAccounts/YOUR_CUSTOM_SA@your-gcp-project.iam.gserviceaccount.com'
+  # with the actual service account you are using for this build.
+  serviceAccount: 'projects/YOUR_PROJECT_ID/serviceAccounts/259449355804@cloudbuild.gserviceaccount.com'
+  # Choose ONE of the following options for log handling:
+
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
